@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div
+  className="List"
+>
+  <header
+    className="List-header"
+  >
+    <h2>
+      Header
+    </h2>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Add Random Card
+    </button>
+  </header>
+  <div
+    className="List-cards"
+  >
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        card a
+      </h3>
+      <p />
+    </div>
+  </div>
+</div>
+`;

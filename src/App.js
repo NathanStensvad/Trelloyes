@@ -3,8 +3,17 @@ import List from './List'
 import './App.css';
 import STORE from './STORE';
 
+
+function omit(obj, keyToOmit) {
+  let {[keyToOmit]: _, ...rest} = obj;
+  return rest;
+}
+
+
 class App extends React.Component {
   state = { store: STORE };
+
+  
 
   handleDeleteCard = (id) => {
     console.log("handle delete card called");
@@ -22,7 +31,7 @@ class App extends React.Component {
     this.setState({
       store: {
         lists: newCardIds,
-        allCards: sameCards
+        allCards: omit(sameCards,id)
       }
     })
   };
